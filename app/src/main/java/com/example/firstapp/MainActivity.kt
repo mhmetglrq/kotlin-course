@@ -18,6 +18,27 @@ class MainActivity : AppCompatActivity() {
         }
 
         println("First App")
+
+
+        //Variables
+
+        var x=10
+        println(x)
+        println(x*20)
+
+        x = 30
+        println(x)
+
+        var y=5
+        println(x+y)
+
+        //like flutter final
+        val z= 20
+        println(z*50)
+
+
+
+
     }
 
 }
