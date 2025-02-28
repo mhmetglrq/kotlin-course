@@ -42,6 +42,28 @@ class MainActivity : AppCompatActivity() {
         val exampleByte: Byte=10
         val exampleInt: Int=10
 
+        //Double Float
+        println("---------------------DOUBLE&FLOAT")
+        val pi = 3.141529
+        println(pi * 2) //double
+        println(5/2)// int
+        println(5.0/2.0) //double
+
+        val sampleDouble=3.0
+        val resultDouble= pi * sampleDouble
+
+        val sampleFloat: Float= 2.25f
+        println(sampleFloat *2)
+
+        //String
+        println("---------------------String")
+        val firstString= "First "
+        println(firstString)
+        val name= "Mehmet"
+        println(name.uppercase())
+
+        val lastName= "Güler"
+        println("$name $lastName")
 
     }
 
