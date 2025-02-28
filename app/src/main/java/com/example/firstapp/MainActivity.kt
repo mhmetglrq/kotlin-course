@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //Variables
-
+        println("-----------------------------INT------------------------------")
         var x=10
         println(x)
         println(x*20)
@@ -36,7 +36,11 @@ class MainActivity : AppCompatActivity() {
         val z= 20
         println(z*50)
 
-
+        val example: Long = 10
+        println(example * 10)
+        val exampleShort: Short=10
+        val exampleByte: Byte=10
+        val exampleInt: Int=10
 
 
     }
