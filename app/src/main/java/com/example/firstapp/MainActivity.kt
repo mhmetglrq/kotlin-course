@@ -65,6 +65,32 @@ class MainActivity : AppCompatActivity() {
         val lastName= "Güler"
         println("$name $lastName")
 
+        //init
+        val myStr: String
+        myStr = "myStr" // init
+
+
+        //convert
+        val age="15"
+
+        val ageInt= age.toInt()
+
+        println(ageInt)
+
+        //Boolean
+        println("---------------------Boolean")
+
+        var myBoolean : Boolean= true
+        myBoolean=false
+
+        println("$myBoolean")
+        println(3>5)
+        println(3<5)
+        println(3==5)
+        println(3!=5)
+
+
+
     }
 
 }
