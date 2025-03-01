@@ -5,8 +5,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import java.util.HashSet
-import kotlin.collections.HashSet
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -157,6 +155,44 @@ class MainActivity : AppCompatActivity() {
 
         val intMap = HashMap<Int, Int>()
         intMap.put(1, 2)
+
+        println("---------------------If Statements")
+
+        var number = 10
+
+        if (number < 9)
+            println("küçük")
+        else if (number == 10)
+            println("eşit")
+        else
+            println("Büyük")
+
+
+        when (number) {
+            0 -> println("küçük")
+            1 -> println("küçük")
+            10 -> println("Eşit")
+            11 -> println("büyük")
+            else -> println("Diğer")
+        }
+
+        println("---------------------While")
+        var j = 0
+        while (j < 10) {
+            j += 1
+            println(j)
+        }
+
+        println("---------------------For")
+        val anotherArray = arrayOf(1, 2, 3, 4, 5, 6, 7)
+
+        for (number in anotherArray) {
+            println(number)
+        }
+        //numberRange
+        for (number in 0..3) {
+            println(number)
+        }
 
 
     }
