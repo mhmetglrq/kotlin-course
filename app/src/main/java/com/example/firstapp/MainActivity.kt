@@ -90,6 +90,49 @@ class MainActivity : AppCompatActivity() {
         println(3!=5)
 
 
+        //Veri Yapıları
+        //Diziler
+        println("---------------------Arrays")
+
+        val nameArray= arrayOf("mehmet","ad","yeni")
+
+        println(nameArray.toString())
+
+        nameArray[1]="memo"
+
+        println(nameArray[1])
+
+        val genericArray= arrayOf("mehmet","ad","yeni")
+
+        println(genericArray.toString())
+
+        println("---------------------ArrayLists")
+
+        val nameList= arrayListOf("First","Second","Third")
+
+        println(nameList.first())
+        nameList.add("Mahmut")
+        println(nameList.get(3))
+        nameList.removeAt(3)
+
+
+        val numberList = arrayListOf<Int>(
+            1,
+            2,
+            3
+        )
+        val numberList2=ArrayList<Int>()
+
+        numberList2.add(1)
+        numberList2.add(2)
+        numberList2.add(3)
+
+        val dynamicList = ArrayList<Any>()
+        dynamicList.add(10)
+        dynamicList.add("a")
+        dynamicList.add(true)
+
+
 
     }
 
