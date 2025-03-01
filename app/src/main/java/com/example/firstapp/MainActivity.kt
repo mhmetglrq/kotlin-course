@@ -5,6 +5,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.util.HashSet
+import kotlin.collections.HashSet
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -132,6 +134,29 @@ class MainActivity : AppCompatActivity() {
         dynamicList.add("a")
         dynamicList.add(true)
 
+        println("---------------------Sets")
+
+        val numberSet = setOf<Int>(1, 2, 3, 4, 4, 5)
+
+        println(numberSet.size)
+
+        numberSet.forEach {
+            println(it)
+        }
+
+        val hashSetExample = HashSet<String>()
+
+        hashSetExample.add("1")
+
+        println("---------------------Maps")
+
+        val foodMap = hashMapOf<String, Int>()
+        foodMap.put("Elma", 100)
+        foodMap.put("Armut", 150)
+        println(foodMap.get("Elma"))
+
+        val intMap = HashMap<Int, Int>()
+        intMap.put(1, 2)
 
 
     }
